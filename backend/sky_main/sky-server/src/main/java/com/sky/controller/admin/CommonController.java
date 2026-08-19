@@ -27,8 +27,9 @@ public class CommonController {
     @PostMapping("/upload")
     @ApiOperation("文件上传")
     public Result<String> upload(MultipartFile file){
-        log.info(("文件上传：{}",file));
+        log.info("文件上传：{}",file);
 
         return null;
     }
 }
+
